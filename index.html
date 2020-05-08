@@ -1,0 +1,190 @@
+<html>
+    <head>
+        <title>Colour Palette Suggestion</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        
+    </head>
+
+    <body>
+
+        <div class="container">
+
+            <br>
+           <center> <h1> <u>Colour Palette Suggestion </u> </h1> </center> <br><br>
+
+            <!-- MAIN FORM SECTION -->
+            <div class="row">
+                <div class="col-6">
+                    <img src="images/colours.jpg" class="img-fluid thumbnail"> <br><br>
+                    <form onsubmit="return show()">
+                        <div class="form-group">
+                            <label for="domain"><b>Choose your app domain : </b></label>
+
+                            <select id="domain" required>
+                                <option value="" disabled selected>Please Choose..</option>
+                                <option value = "PERSONALIZATION">PERSONALIZATION</option>
+                                <option value = "ENTERTAINMENT">ENTERTAINMENT</option>
+                                <option value = "NEWS_AND_MAGAZINES">NEWS_AND_MAGAZINES</option>
+                                <option value = "MUSIC_AND_AUDIO">MUSIC_AND_AUDIO</option>
+                                <option value = "HEALTH_AND_FITNESS">HEALTH_AND_FITNESS</option>
+                                <option value = "MEDICAL">MEDICAL</option>
+                                <option value = "EDUCATION">EDUCATION</option>
+                                <option value = "PHOTOGRAPHY">PHOTOGRAPHY</option>
+                                <option value = "BOOKS_AND_REFERENCE">BOOKS_AND_REFERENCE</option>
+                                <option value = "GAME_ARCADE">GAME_ARCADE</option>
+                                <option value = "GAME_PUZZLE">GAME_PUZZLE</option>
+                                <option value = "PRODUCTIVITY">PRODUCTIVITY</option>
+                                <option value = "LIFESTYLE">LIFESTYLE</option>
+                                <option value = "TRAVEL_AND_LOCAL">TRAVEL_AND_LOCAL</option>
+                                <option value = "SPORTS">SPORTS</option>
+                                <option value = "COMMUNICATION">COMMUNICATION</option>
+                                <option value = "TOOLS">TOOLS</option>
+                                <option value = "GAME_BOARD">GAME_BOARD</option>
+                                <option value = "GAME_WORD">GAME_WORD</option>
+                                <option value = "GAME_ROLE_PLAYING">GAME_ROLE_PLAYING</option>
+                                <option value = "GAME_CASUAL">GAME_CASUAL</option>
+                                <option value = "GAME_EDUCATIONAL">GAME_EDUCATIONAL</option>
+                                <option value = "MAPS_AND_NAVIGATION">MAPS_AND_NAVIGATION</option>
+                                <option value = "BUSINESS">BUSINESS</option>
+                                <option value = "SOCIAL">SOCIAL</option>
+                                <option value = "VIDEO_PLAYERS">VIDEO_PLAYERS</option>
+                                <option value = "GAME_STRATEGY">GAME_STRATEGY</option>
+                                <option value = "GAME_ACTION">GAME_ACTION</option>
+                                <option value = "FINANCE">FINANCE</option>
+                                <option value = "ART_AND_DESIGN">ART_AND_DESIGN</option>
+                                <option value = "AUTO_AND_VEHICLES">AUTO_AND_VEHICLES</option>
+                                <option value = "SHOPPING">SHOPPING</option>
+                                <option value = "GAME_RACING">GAME_RACING</option>
+                                <option value = "FOOD_AND_DRINK">FOOD_AND_DRINK</option>
+                                <option value = "WEATHER">WEATHER</option>
+                                <option value = "EVENTS">EVENTS</option>
+                                <option value = "GAME_CARD">GAME_CARD</option>
+                                <option value = "GAME_SIMULATION">GAME_SIMULATION</option>
+                                <option value = "GAME_SPORTS">GAME_SPORTS</option>
+                                <option value = "PARENTING">PARENTING</option>
+                                <option value = "GAME_TRIVIA">GAME_TRIVIA</option>
+                                <option value = "COMICS">COMICS</option>
+                                <option value = "GAME_ADVENTURE">GAME_ADVENTURE</option>
+                                <option value = "BEAUTY">BEAUTY</option>
+                                <option value = "DATING">DATING</option>
+                                <option value = "HOUSE_AND_HOME">HOUSE_AND_HOME</option>
+                                <option value = "GAME_MUSIC">GAME_MUSIC</option>
+                                <option value = "LIBRARIES_AND_DEMO">LIBRARIES_AND_DEMO</option>
+                                <option value = "GAME_CASINO">GAME_CASINO</option>
+                            </select>
+
+                            <br><br>
+
+                            <label for="rating"><b>Your app's current rating : </b></label>
+                            <input type="number" placeholder="0-5"> 
+                            <br><br>
+                            
+                            <label for="downloads"><b>Enter the current downloads of your app : </b></label>
+                            <input type="number" required><br><br>
+
+                            <center><button type="submit" id="btn" class="btn btn-primary" onclick="return show()"> Suggest Colour Pallete </button></center>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-6">
+                    The current generation’s curiosity and innovation coupled with the Indian government promoting Make In India campaign. This is supporting innovative ideas, helping them grow and hence develop many startups. We now have the confidence to carry the huge responsibility of developing, ourselves. The startups produced by people who are experts in efficiency and innovating. However, focus on the design aspect is low, either due to a lack of resources or knowledge. Designing is hence, an area that requires attention. The colour scheme used by a company is a very crucial part of consumer perception and image of the company, which is sometimes overlooked by startups. Colour usage is a critical factor to establish a brand identity and attract customers. Some companies which do take care of it either hire designers who don’t have the same motivation as the entrepreneurs, which can cause a mismatch between what is intended, what is designed and what is perceived.
+                    We are working towards the emerging intersection of Machine Learning and Human Centred Design. Since this is an active area of research, our work also required lots of research, hypotheses, and testing. Our model learns by taking input of domainwise companies, their intent, colour schemes, success in a particular year and target customers. And based on this we recommend a reasonable and promising colour scheme for their start up.
+                </div>
+            </div>
+            
+            <hr style="height: 10px; background-color:#BABABA ;">
+
+            <!-- Output Section  -->
+            
+            <div class='row'>
+                <div class="col" align="center">
+                    <h2> <span id="op_head">Suggested Colour Palette Will Appear Below.</span> </h2>
+                </div>
+            </div>
+
+             <div class="row">
+                 <div class="col" align="center">
+                    <div id="output"></div>
+                </div>
+            </div>
+            </div>        
+
+        <script >       
+            function show(){
+
+
+                var x = document.getElementById("domain");
+                var selected = x.options[x.selectedIndex].value; 
+                var k = '{ "red":["NEWS_AND_MAGAZINES","FOOD_AND_DRINK"], "blue":["MEDICAL","PRODUCTIVITY","TOOLS","WEATHER"], "black_red":["PERSONALIZATION"], "blue_yellow":["BOOKS_AND_REFERENCE","HOUSE_AND_HOME"], "dark_blue_red":["MUSIC_AND_AUDIO","LIFESTYLE","SPORTS","AUTO_AND_VEHICLES","EVENTS"], "pink_black":["DATING"], "pink_blue":["PHOTOGRAPHY","ART_AND_DESIGN","PARENTING"], "red_yellow_orange_blue":["ENTERTAINMENT","GAME_ARCADE","GAME_PUZZLE","TRAVEL_AND_LOCAL","GAME_BOARD","GAME_WORD","GAME_ROLE_PLAYING","GAME_CASUAL","GAME_ACTION","GAME_RACING","GAME_CARD", "GAME_SIMULATION", "GAME_SPORTS","COMICS","GAME_ADVENTURE","GAME_MUSIC","GAME_CASINO"], "blue_green_red":["HEALTH_AND_FITNESS","GAME_EDUCATIONAL","GAME_STRATEGY","GAME_TRIVIA"], "blue_green":["EDUCATION","COMMUNICATION","BUSINESS","SOCIAL","FINANCE","LIBRARIES_AND_DEMO","MAPS_AND_NAVIGATION"], "purple_red":["VIDEO_PLAYERS","BEAUTY"], "yellow_red":["SHOPPING"] }';  
+                var categories = JSON.parse(k);
+                var op;
+
+                if(categories.red.includes(selected)){
+                    op = 'red';
+                }
+                else if(categories.blue.includes(selected)){
+                    op = 'blue';
+                }
+                else if(categories.black_red.includes(selected)){
+                    op = 'black_red';
+                }
+                else if(categories.blue_yellow.includes(selected)){
+                    op = 'blue_yellow';
+                }
+                else if(categories.dark_blue_red.includes(selected)){
+                    op = 'dark_blue_red';
+                }
+                else if(categories.pink_black.includes(selected)){
+                    op = 'pink_black';
+                }
+                else if(categories.pink_blue.includes(selected)){
+                    op = 'pink_blue';
+                }
+                else if(categories.red_yellow_orange_blue.includes(selected)){
+                    op = 'red_yellow_orange_blue';
+                }
+                else if(categories.blue_green_red.includes(selected)){
+                    op = 'blue_green_red';
+                }
+                else if(categories.blue_green.includes(selected)){
+                    op = 'blue_green';
+                }
+                else if(categories.purple_red.includes(selected)){
+                    op = 'purple_red';
+                }
+                else{
+                    op = 'yellow_red';
+                }
+
+                document.getElementById("op_head").innerText = "The Suggested Colour Palette Is:";
+                var elem = document.createElement("img");
+                elem.src = 'images/'+op+'.png';
+                elem.setAttribute('height','238');
+                elem.setAttribute('width','737');
+                
+                // Removing any existing image and appending new image
+                var display_area = document.getElementById("output");
+                while(display_area.hasChildNodes()){
+                    display_area.removeChild(display_area.firstChild);
+                }
+                display_area.appendChild(elem);
+                return false;
+            }
+        </script>
+
+        <script>
+            $(document).ready(function() { 
+                $("#btn").click(function() { 
+                    $(document).scrollTop($(document).height()); 
+                 }); 
+            }); 
+        </script>
+
+    </body>
+</html>
